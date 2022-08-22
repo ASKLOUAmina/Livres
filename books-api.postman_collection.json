@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "80ce9b9a-9aa1-427f-8052-b0398f4187fe",
+		"name": "books-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14663159"
+	},
+	"item": [
+		{
+			"name": "/books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/books",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/bboks/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/books/8e07cb3d-e9b5-468e-913b-62a26bec7770",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"books",
+						"8e07cb3d-e9b5-468e-913b-62a26bec7770"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"test\",\r\n    \"author\":\"testy\",\r\n    \"editor\":\"tetso\",\r\n    \"date\":\"2020-02-02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/books/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"TEST 1\",\r\n    \"author\":\"TESTY 1\",\r\n    \"editor\":\"TESTY 1\",\r\n    \"date\":\"2005-02-02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/books/04d555d1-3f8f-49a8-91c1-cc16c711e0a0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"books",
+						"04d555d1-3f8f-49a8-91c1-cc16c711e0a0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/books/:id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
